@@ -147,8 +147,11 @@ function filterItems(e){
         }else{
             item.style.display='none';
         }
-
-        
+    
+        setTimeout(()=>{
+            document.querySelector('#filter').value='';
+            item.style.display='flex';
+        },4000)
     })
 }
 
